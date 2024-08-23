@@ -1,0 +1,88 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: url('galaxy.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: #fff;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    position: relative;
+}
+
+.member {
+    background: rgba(0, 0, 0, 0.8);
+    border: 1px solid #444;
+    border-radius: 8px;
+    margin: 10px;
+    padding: 15px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.7);
+    position: relative;
+    transform: perspective(500px) rotateX(5deg) rotateY(5deg);
+    z-index: 1;
+    transition: transform 0.3s ease-in-out;
+    width: calc(100% / 3 - 20px);
+}
+.member img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border: 3px solid #310357;
+    position: relative;
+}
+.profile-info {
+    margin-top: 10px;
+}
+.profile-info h2 {
+    font-size: 1.5em;
+    margin: 10px 0;
+    position: relative;
+    color: transparent;
+    background: linear-gradient(135deg, #8e2de2, #4a00e0, #ff0081);
+    -webkit-background-clip: text;
+    background-clip: text;
+    text-shadow: 
+        0 0 10px rgba(255, 255, 255, 0.8), 
+        0 0 20px rgba(255, 255, 255, 0.6), 
+        0 0 30px rgba(255, 255, 255, 0.4); 
+    transform: perspective(500px) rotateX(5deg) rotateY(5deg);
+    z-index: 1;
+}
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 10px 0;
+    font-size: 1.2em;
+    color: #fff;
+    background: linear-gradient(135deg, #8e2de2, #4a00e0, #ff0081);
+    border: none;
+    border-radius: 8px;
+    text-decoration: none;
+    text-align: center;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.7);
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+.button:hover {
+    background: linear-gradient(135deg, #4a00e0, #8e2de2, #ff0081);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.9);
+    transform: translateY(-5px);
+}
+footer {
+    background-color: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    bottom: 0;
+    width: 100%;
+}
